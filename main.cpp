@@ -5,21 +5,21 @@ using namespace std;
 
 //                                   Problem 1
 
-/*int findMax(int *arr, int size) {
-    int max = *arr;
-    for (int *p = arr; p < arr + size; p++) {
-        if (max < *p) {
-            max = *p;
-        }
-    }
-    return max;
-}
-
-int main() {
-    int heights [] = {150, 165, 172, 160, 180};
-    int size = sizeof(heights) / sizeof(heights[0]);
-    cout << "Maximum height: " << findMax(heights, size) << endl;
-}*/
+// int findMax(int *arr, int size) {
+//     int max = *arr;
+//     for (int *p = arr; p < arr + size; p++) {
+//         if (max < *p) {
+//             max = *p;
+//         }
+//     }
+//     return max;
+// }
+//
+// int main() {
+//     int heights [] = {150, 165, 172, 160, 180};
+//     int size = sizeof(heights) / sizeof(heights[0]);
+//     cout << "Maximum height: " << findMax(heights, size) << endl;
+// }
 
 //                      Problem 2
 
@@ -36,20 +36,21 @@ int main() {
 
 // int main() {
 //     int n;
-//     int max;
 //     cin >> n;
 //     int arr[n];
 //     for (int i = 0; i < n; i++) {
 //         cin >> arr[i];
 //     }
-//     for (auto x: arr) {
-//         max = arr[0];
-//         if (x > max) {
-//             max = x;
+//
+//     int *maxPtr = &arr[0];
+//     for (int i = 1; i < n; i++) {
+//         if (arr[i] > *maxPtr) {
+//             maxPtr = &arr[i];
 //         }
 //     }
-//     int *ptr = &max;
-//     cout << ptr << endl;
+//
+//     cout << "Max value: " << *maxPtr << endl;
+//     cout << "Pointer to max: " << maxPtr << endl;
 // }
 
 //                         Problem 4
@@ -79,13 +80,11 @@ int main() {
 
 //                           Problem 5
 // int main() {
-//     int arr[10];
+//     int arr[10] = {12, 45, 67, 23, 89, 90, 33, 56, 77, 88};
+//     int *ptrA = arr;
 //     for (int i = 0; i < 10; i++) {
-//         arr[i] = (i+i*10)*(i+i*10);
-//     }
-//     for (auto i : arr) {
-//         int *ptr = &i;
-//         cout << ptr << endl;
+//         cout << "Address: " << (ptrA + i) << endl;
+//         cout << "Value: " << *(ptrA + i) << endl;
 //     }
 // }
 
@@ -97,6 +96,47 @@ int main() {
 //     cin >> Secret;
 //     int *ptr = &Secret;
 //     cout << "The secret number is" << " " << *ptr << endl;
+// }
+
+//                              Problem 7
+
+// float calculateAverage(int *arr, int size) {
+//     float sum = 0;
+//     for (int i = 0; i < size; i++) {
+//         sum += *(arr + i);
+//     }
+//     return sum / size;
+// }
+//
+// int main() {
+//     int socres[] = {88, 76, 90, 85, 92};
+//     int size = 5;
+//     cout << "Average score: " << calculateAverage(socres, size) << endl;
+// }
+
+//                        Problem 8
+
+// int main() {
+//     int treasures[] = {10, 20, 30, 40, 50};
+//     int *ptr = treasures;
+//     ptr += 4;
+//     cout << "The key to the treasure is " << *ptr << "!" << endl;
+// }
+
+//                         Problem 9
+
+// int main() {
+//     int score = 75;
+//     int *ptr = &score;
+//     cout << "Original score: " << *ptr << endl;
+//     *ptr += 10;
+//     cout << "Updated score: " << *ptr << endl;
+// }
+
+//                           Problem 10
+
+// int main() {
+//
 // }
 
 
