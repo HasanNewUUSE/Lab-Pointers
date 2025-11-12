@@ -5,21 +5,21 @@ using namespace std;
 
 //                                   Problem 1
 
-// int findMax(int *arr, int size) {
-//     int max = *arr;
-//     for (int *p = arr; p < arr + size; p++) {
-//         if (max < *p) {
-//             max = *p;
-//         }
-//     }
-//     return max;
-// }
-//
-// int main() {
-//     int heights [] = {150, 165, 172, 160, 180};
-//     int size = sizeof(heights) / sizeof(heights[0]);
-//     cout << "Maximum height: " << findMax(heights, size) << endl;
-// }
+/*int findMax(int *arr, int size) {
+    int max = *arr;
+    for (int *p = arr; p < arr + size; p++) {
+        if (max < *p) {
+            max = *p;
+        }
+    }
+    return max;
+}
+
+int main() {
+    int heights [] = {150, 165, 172, 160, 180};
+    int size = sizeof(heights) / sizeof(heights[0]);
+    cout << "Maximum height: " << findMax(heights, size) << endl;
+}*/
 
 //                      Problem 2
 
